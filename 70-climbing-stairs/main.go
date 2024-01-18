@@ -1,15 +1,5 @@
 package main
 
-import "fmt"
-
-func main() {
-	ns := []int{1, 2, 3, 4, 40, 41, 42, 43, 44, 100}
-
-	for _, n := range ns {
-		fmt.Println(climbStairs(n))
-	}
-}
-
 func climbStairs(n int) int {
 	return next(n, &map[int]int{0: 1, 1: 1})
 }
